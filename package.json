@@ -1,0 +1,8 @@
+{
+  "name": "nodejs-aerospike-poc",
+  "version": "0.0.1",
+  "description": "learning nodejs aerospike client",
+  "dependencies": {
+    "aerospike": "^1.0.57"
+  }
+}
