@@ -20,3 +20,14 @@ client.connect(function (response) {
         console.log(response);
     }
 });
+
+var key = aerospike.key("test", "users", "aadfd15c-564b-4aa2-8fce-8446bf0e6704");
+client.get(key, function(err, rec, meta) {
+     // Check for errors
+     if ( err.code === aerospike.status.AEROSPIKE_OK ) {
+         console.log(rec);
+     }
+     else {
+         console.log('error');
+     }
+ });
